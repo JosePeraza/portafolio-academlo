@@ -1,9 +1,6 @@
-
 .container-max{
     width: 100%;
 }
-
-
 
 .container {
     width: 100%;
@@ -12,6 +9,11 @@
     margin-right: auto;
     margin-left: auto;
 
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 [class*="col-"] {
@@ -74,10 +76,6 @@
 /* ------- Medium ------- */
 
 @media (min-width: 768px) {
-    .row {
-        display: flex;
-    }
-
     .col-md-1 {
         width: 8.33%;
     }
@@ -130,10 +128,6 @@
 /* ------- Large ------- */
 
 @media (min-width: 992px) {
-    .row {
-        display: flex;
-    }
-    
     .col-lg-1 {
         width: 8.33%;
     }
@@ -186,10 +180,6 @@
 /* ------- Extra large ------- */
 
 @media (min-width: 1200px) {
-    .container{
-        max-width: 1140px;
-    }
-
     .col-xl-1 {
         width: 8.33%;
     }
