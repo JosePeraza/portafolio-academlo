@@ -3,90 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/css-responsive.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./resources/css/css-responsive.css">
+    <link rel="stylesheet" href="./resources/css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="./resources/js/javascript.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <section>
-        <div class="container-max">
+
+
+    
+    <header>
+        <div class="container">
+            <nav id="menubar" class="nav aling-center">
+                <img class="logo" src="./resources/img/logo.png" alt="logo">
+                <ul id="menu" class="hide">
+                    <li><a href="#home"><span><i class="fas fa-home"></i></span> HOME</a></li>
+                    <li><a href="#about"><span><i class="fas fa-user"></i></span> ABOUT</a></li>
+                    <li><a href="#portfolio"><span><i class="fas fa-image"></i></span> PORTFOLIO</a></li>
+                    <li><a href="#contact"><span><i class="fas fa-envelope"></i></span> CONTACT</a></li>
+                </ul>
+                <a onclick="showMenu()" class="burguer-menu" href="#">
+                    <i class="fas fa-align-justify"></i>
+                </a>
+            </nav>    
+        </div>
+    </header>
+
+
+    <section id="home">
+        <div class="container-max main-bg">
+            <div class="container-max main light d-flex overlay">
+                <div class="container">
+                    <h1 class="main-title">Expert in code</h1>
+                    <h4 class="main-subtitle">Team with big talents</h4>
+                    <a class="btn-link" href="">Learn more about us</a>
+                    <div class="icons d-flex j-center">
+                        <div class="rounded">
+                            <i class="fab fa-facebook-f spacing"></i>
+                        </div>
+                        <div class="rounded">
+                            <i class="fab fa-instagram spacing"></i>
+                        </div>
+                        <div class="rounded">
+                            <i class="fab fa-twitter spacing"></i>
+                        </div>
+                        <div class="rounded">
+                            <i class="fab fa-twitch spacing"></i>
+                        </div> 
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <section id="about">
+        <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="container-max text-center spacing-bot">
+                        <h1 class="big-title"><span class="primary-color">ABOUT</span> US</h1>
+                        <h3 class="small-title">who we are</h3>   
+                        <span class="outer-line"></span>
+                        <span><i class="fas fa-user"></i></span>
+                        <span class="outer-line"></span>    
+                    </div>
+                </div>    
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
                     <div class="container">
-                        <p>Esto ya no es un lorem ipsum u3u ayy lmao</p>
+                        <h2 class="medium-title">WE ARE <span class=" bold">PIXEL STUDIOS</span></h2>
+                        <span class="outer-line-max"></span>
+                        <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In quod est vitae, excepturi voluptatem fuga dolorem eum ullam aliquam culpa eaque voluptates, eligendi architecto sunt numquam sapiente voluptas recusandae. Tempora.</p>
+                        <ul class="about-ul about-list">
+                            <li class="about-list-item active">
+                                <a class="link-active" href="#">OUR MISSION</a> 
+                            </li>
+                            <li class="about-list-item-m">
+                                <a href="#">OUR ADVANTAGES</a> 
+                            </li>
+                            <li class="about-list-item">
+                                <a href="#">OUR GUARANTEES</a> 
+                            </li>
+                        </ul>
+                        <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum reprehenderit obcaecati inventore nihil unde quidem, ex ipsa aliquam ducimus fuga incidunt commodi asperiores necessitatibus. Quo soluta accusantium dolore dolorum aspernatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere porro eius saepe quidem dolor aliquid sit quasi, voluptates nostrum iure tempora accusamus, tenetur excepturi minima laboriosam! Repellendus aperiam aliquid repellat!</p>
+                        <div class="row">
+                            <a class="btn-link" href="">Learn more about us</a>
+                        </div>    
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veritatis temporibus nulla ab corrupti laudantium eum, asperiores perspiciatis perferendis sunt a id quisquam, deleniti sapiente suscipit hic, at sed voluptates.</p>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                    <div class="teamwork-bg about-img"></div>    
+                </div>
+            </div>    
+        </div> 
+    </section>
+    
+    <section>
+        <div class="container-max about-bg">
+            <div class="container-max overlay about-me">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="container">
+                            <img class="about-selfi" src="./resources/img/selfi.jpg" alt="selfi">    
+                        </div>
+                        
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex">
+                        <div class="container aling-self">
+                            <h1 class="light big-title">PROJECT MANAGER</h1>
+                            <h3 class="primary-color medium-title">JOSÉ GUADALUPE PERAZA RIVERO</h3>
+                            <p class="light about-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda iste dolor, officiis voluptatum debitis consectetur. Ea eum earum, laudantium non atque minima quasi incidunt, dolore fugit qui eveniet! Voluptatibus, veniam!</p>    
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veritatis temporibus nulla ab corrupti laudantium eum, asperiores perspiciatis perferendis sunt a id quisquam, deleniti sapiente suscipit hic, at sed voluptates.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="container-max text-center">
+                        <h1 class="big-title"><span class="primary-color">OUR</span> PORTFOLIO</h1>
+                        <h3 class="small-title">OUR LATEST WORKS</h3>   
+                        <span class="outer-line"></span>
+                        <span><i class="fas fa-image"></i></span>
+                        <span class="outer-line"></span>    
+                    </div>
+                </div>    
+            </div>
+
+            <div class="container spacing-bot">
+                <nav class="portfolio-nav">
+                    <ul class="portfolio-list">
+                        <li class="link-portfolio-active">All Projects</li>
+                        <li class="link-portfolio">Images</li>
+                        <li class="link-portfolio">Code</li>
+                        <li class="link-portfolio">Pages</li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container portfolio">
+                        <div class="working-img about-img"></div>
+                        <div class="porfolio-body">
+                            <h4 class="portfolio-title">Team Work</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt praesentium nemo nulla sed adipisci modi numquam perferendis enim, recusandae fugit ex blanditiis ullam assumenda voluptates debitis molestias obcaecati officia.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veritatis temporibus nulla ab corrupti laudantium eum, asperiores perspiciatis perferendis sunt a id quisquam, deleniti sapiente suscipit hic, at sed voluptates.</p>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container portfolio">
+                        <div class="coding-img about-img"></div>
+                        <div class="porfolio-body">
+                            <h4 class="portfolio-title">Programing</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt praesentium nemo nulla sed adipisci modi numquam perferendis enim, recusandae fugit ex blanditiis ullam assumenda voluptates debitis molestias obcaecati officia.</p>
+                        </div>
                     </div>
-                </div>.
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container portfolio">
+                        <div class="photo-img about-img"></div>
+                        <div class="porfolio-body">
+                            <h4 class="portfolio-title">Photography</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt praesentium nemo nulla sed adipisci modi numquam perferendis enim, recusandae fugit ex blanditiis ullam assumenda voluptates debitis molestias obcaecati officia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container portfolio">
+                        <div class="friends-img about-img"></div>
+                        <div class="porfolio-body">
+                            <h4 class="portfolio-title">Social Events</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt praesentium nemo nulla sed adipisci modi numquam perferendis enim, recusandae fugit ex blanditiis ullam assumenda voluptates debitis molestias obcaecati officia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container portfolio">
+                        <div class="database-img about-img"></div>
+                        <div class="porfolio-body">
+                            <h4 class="portfolio-title">Data Structures</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt praesentium nemo nulla sed adipisci modi numquam perferendis enim, recusandae fugit ex blanditiis ullam assumenda voluptates debitis molestias obcaecati officia.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="container portfolio">
+                        <div class="cellphone-img about-img"></div>
+                        <div class="porfolio-body">
+                            <h4 class="portfolio-title">Mobile apps</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos incidunt praesentium nemo nulla sed adipisci modi numquam perferendis enim, recusandae fugit ex blanditiis ullam assumenda voluptates debitis molestias obcaecati officia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+
+    <section id="contact">
+        <div class="container-max contact-bg">
+            <div class="container-max overlay about-me">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="container-max text-center">
+                            <h1 class="big-title light"><span class="primary-color">SEND US</span> AN EMAIL</h1>
+                            <h4 class="small-title light">WE ARE VERY RESPONSIVE TO MESSAGES</h4>    
+                        </div>
+                    </div>    
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="container-max">
+                                <input placeholder="First Name" class="contact-input" type="text">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="container-max">
+                                <input placeholder="First Name" class="contact-input" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="container-max">
+                                <textarea class="contact-textarea" placeholder="Message" cols="45" rows="7"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="container-max">
+                                <input placeholder="First Name" class="contact-input" type="text">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="container-maxr">
+                                <a class="btn-link contact-btn" href="">Learn more about us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
 
-    <section>
+    <footer>
+        <div class="container-max">
+            <h2 class="final">&copy; Academlo | José Peraza</h2>
+        </div>
+    </footer>
 
-    </section>
-
-
-
-    <section>
-
-    </section>
-
-
-
-    <section>
-
-    </section>
-
-
-
-    <section>
-
-    </section>
-
-
-
-    <section>
-
-    </section>
-
-
-
-    <section>
-
-    </section>
-
-
-
-    <section>
-
-    </section>
-
-
-
-    <section>
-
-    </section>
-
-
-
-    <section>
-
-    </section>
 </body>
 </html>
